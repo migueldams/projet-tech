@@ -1,5 +1,5 @@
 import Counter from '@/components/common/Counter'
-import  { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { galleries, partern, service } from '@/constant'
 import { ArrowRight, Check } from 'lucide-react'
 import Title from '@/components/ui/Title';
@@ -8,7 +8,7 @@ import ScrollAnimation from '@/components/common/ScrollAnimation';
 
 
 function Services() {
-    const cardsRef = useRef<HTMLDivElement[]>([]);
+    const cardsRef = useRef<HTMLDivElement[] | null>([]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -55,7 +55,9 @@ function Services() {
                 </div>
                 <div className='w-2/3  flex flex-col  gap-10'>
                     {service.map((item, i) => (
-                        <div key={item.id} ref={(el) => (cardsRef.current[i] = el!)} className='w-full h-120 flex bg-white justify-center items-center gap-10 shadow-2xl shadow-gray-300 p-5 rounded-md ' style={{ zIndex: service.length + item.id }}>
+                        <div key={item.id} ref={(el) => {
+                            cardsRef?.current[i] = el ?? null;
+                        }} className='w-full h-120 flex bg-white justify-center items-center gap-10 shadow-2xl shadow-gray-300 p-5 rounded-md ' style={{ zIndex: service.length + item.id }}>
                             <img className='w-1/2 h-full object-cover rounded-md' src={item.imageUrl} alt="" />
                             <div className='w-1/2 h-full flex flex-col justify-center gap-7 pl-10'>
                                 <p className='font-semibold text-4xl'>{item.title}</p>
