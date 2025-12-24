@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Home from './Home'
 import Service from './Services'
 import About from './About'

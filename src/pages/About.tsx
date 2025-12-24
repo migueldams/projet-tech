@@ -1,7 +1,7 @@
 import ScrollAnimation from '@/components/common/ScrollAnimation';
 import Title from '@/components/ui/Title'
 import { about } from '@/constant'
-import React, { useRef, useState } from 'react'
+import { useState } from 'react'
 
 function About() {
 

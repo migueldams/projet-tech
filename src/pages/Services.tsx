@@ -1,10 +1,9 @@
 import Counter from '@/components/common/Counter'
-import React, { useEffect, useRef } from 'react'
+import  { useEffect, useRef } from 'react'
 import { galleries, partern, service } from '@/constant'
-import { ArrowRight, Check, Hand } from 'lucide-react'
+import { ArrowRight, Check } from 'lucide-react'
 import Title from '@/components/ui/Title';
 import Stick from '@/components/ui/stick';
-import { Button } from '@/components/ui/Button';
 import ScrollAnimation from '@/components/common/ScrollAnimation';
 
 

@@ -1,8 +1,6 @@
 import FormContact from '@/components/common/FormContact'
 import ScrollAnimation from '@/components/common/ScrollAnimation'
-import Title from '@/components/ui/Title'
 import { Mail } from 'lucide-react'
-import React from 'react'
 
 function Contact() {
     return (
