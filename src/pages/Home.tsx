@@ -1,7 +1,7 @@
 import React from 'react'
 import { Hand, Laptop, SearchCheck, Star, Trophy } from 'lucide-react'
 import { listhozontale } from '@/constant';
-import Stick from '@/components/ui/Stick';
+import Stick from '@/components/ui/stick';
 import ScrollAnimation from '@/components/common/ScrollAnimation';
 
 function Home() {
