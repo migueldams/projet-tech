@@ -1,9 +1,9 @@
 
-import Home from './Home'
-import Service from './Services'
-import About from './About'
-import Contact from './Contact'
-import Blog from './blog'
+import Home from '@/pages/Home'
+import Service from '@/pages/Services'
+import About from '@/pages/About'
+import Contact from '@/pages/Contact'
+import Blog from '@/pages/blog'
 
 function Pages() {
   return (
