@@ -1,5 +1,5 @@
 import Counter from '@/components/common/Counter'
-import { useEffect, useRef } from 'react'
+import  { useEffect, useRef } from 'react'
 import { galleries, partern, service } from '@/constant'
 import { ArrowRight, Check } from 'lucide-react'
 import Title from '@/components/ui/Title';
@@ -8,30 +8,33 @@ import ScrollAnimation from '@/components/common/ScrollAnimation';
 
 
 function Services() {
-    const cardsRef = useRef<HTMLDivElement[] | null>([]);
+    
 
-    useEffect(() => {
-        const handleScroll = () => {
-            if (!cardsRef.current) return;
-            cardsRef.current.forEach((card: HTMLDivElement, i: number) => {
-                const rect = card.getBoundingClientRect();
-                const offset = Math.max(0, 150 - rect.top);
+   const cardsRef = useRef<Array<HTMLDivElement | null>>([]); // ref type-safe
 
-                if (offset === 0) {
-                    card.style.position = "sticky";
-                    card.style.top = "150px";
-                } else {
-                    card.style.position = "relative";
-                    card.style.top = "0px";
-                }
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!cardsRef.current) return;
 
-            });
-        };
+      cardsRef.current.forEach((card, i) => {
+        if (!card) return; // TS safety
 
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+        const rect = card.getBoundingClientRect();
+        const offset = Math.max(0, 150 - rect.top);
 
+        if (offset === 0) {
+          card.style.position = "sticky";
+          card.style.top = "150px";
+        } else {
+          card.style.position = "relative";
+          card.style.top = "0px";
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
     return (
         <ScrollAnimation>
@@ -55,9 +58,7 @@ function Services() {
                 </div>
                 <div className='w-2/3  flex flex-col  gap-10'>
                     {service.map((item, i) => (
-                        <div key={item.id} ref={(el) => {
-                            cardsRef?.current[i] = el ?? null;
-                        }} className='w-full h-120 flex bg-white justify-center items-center gap-10 shadow-2xl shadow-gray-300 p-5 rounded-md ' style={{ zIndex: service.length + item.id }}>
+                        <div key={item.id} ref={(el) => {cardsRef.current[i] = el; }} className='w-full h-120 flex bg-white justify-center items-center gap-10 shadow-2xl shadow-gray-300 p-5 rounded-md ' style={{ zIndex: service.length + item.id }}>
                             <img className='w-1/2 h-full object-cover rounded-md' src={item.imageUrl} alt="" />
                             <div className='w-1/2 h-full flex flex-col justify-center gap-7 pl-10'>
                                 <p className='font-semibold text-4xl'>{item.title}</p>
