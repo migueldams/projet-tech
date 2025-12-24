@@ -4,7 +4,7 @@ import { NavLink } from '@/constant';
 function Footer() {
 
     return (
-        <div className='w-screen lg:h-120 bg-gray-800 flex flex-col  items-center'>
+        <div className='w-screen lg:h-120 bg-black flex flex-col  items-center'>
             <div className='w-full lg:h-100 px-20 py-20 flex flex-col lg:flex-row justify-between'>
                 <div className='w-full lg:w-1/3 flex flex-col justify-center'>
                     <img className='w-80 lg:w-50 h-20' src="https://photowebdesigns.com/wp-content/uploads/2025/03/logo-footer.svg" alt="" />

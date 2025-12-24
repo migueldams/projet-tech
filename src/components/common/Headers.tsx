@@ -1,9 +1,44 @@
 import React from 'react'
 import { NavLink } from '@/constant';
-import {Menu} from 'lucide-react'
+import { Menu } from 'lucide-react'
 
 function Headers() {
 
+    
+    const handleScroll = (id:number) => {
+        switch (id) {
+            case 1 :
+                document.getElementById("home")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+                break;
+
+            case 2:
+                document.getElementById("service")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+                break;
+
+            case 3:
+                document.getElementById("about")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+                break;
+
+            case 4:
+                document.getElementById("contact")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+                break;
+
+            default:
+                break;
+        }
+    };
 
     return (
         <div className='h-30 w-screen flex justify-center items-end  '>
@@ -13,18 +48,18 @@ function Headers() {
                     <img src="https://photowebdesigns.com/wp-content/uploads/2025/03/logo.svg" alt="" />
                 </div>
                 <div className='w-1/2 hidden md:flex justify-center gap-4 font-semibold items-center'>
-                    {NavLink.map((link) => (
-                        <a
+                    {NavLink.map((link,i) => (
+                        <button
                             key={link.name}
-                            href={link.href}
+                            onClick={() => handleScroll(i + 1)}
                             className="text-gray-800 hover:text-gray-500 mx-4"
                         >
                             {link.name}
-                        </a>
+                        </button>
                     ))}
                 </div>
                 <div className=' flex justify-end items-center w-1/2 md:hidden'>
-                    <button><Menu  className='w-20'/></button>
+                    <button><Menu className='w-20' /></button>
                 </div>
                 <div className='flex lg:w-1/4 justify-center items-center'>
                     <button className='flex items-center gap-2 bg-gray-100 rounded-full px-2 py-1 hover:bg-gray-500 transition-colors'>
@@ -36,7 +71,7 @@ function Headers() {
                     </button>
                 </div>
             </div>
-           
+
 
         </div>)
 

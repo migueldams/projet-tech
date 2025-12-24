@@ -236,3 +236,18 @@ body {
 .animate-scroll:hover {
   animation-play-state: paused;
 }
+
+.Carousel-container {
+
+  width: 100%;
+  animation: carousel 20s linear infinite;
+}
+
+@keyframes carousel {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

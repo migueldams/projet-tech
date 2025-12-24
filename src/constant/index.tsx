@@ -84,13 +84,13 @@ const galleries: galleryType[] = [
     },
     {
         id: 2,
-        imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/gallery2.jpg",
+        imageUrl: "https://agency.photowebdesigns.com/wp-content/uploads/sites/12/2025/02/service-1.jpg",
         title: "City Skyline",
         description: "A stunning capture of a city's skyline during twilight."
     },
     {
         id: 3,
-        imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/gallery3.jpg",
+        imageUrl: "https://agency.photowebdesigns.com/wp-content/uploads/sites/12/2025/02/service-2.jpg",
         title: "Forest Pathway",
         description: "A serene pathway through a dense forest."
     },
@@ -210,8 +210,8 @@ const ask: askType[] = [
 
 const NavLink = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
+    { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
 ]
 
