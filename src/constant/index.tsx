@@ -78,7 +78,7 @@ const partern: parteernType[] = [
 const galleries: galleryType[] = [
     {
         id: 1,
-        imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/gallery1.jpg",
+        imageUrl: "https://freelancer.photowebdesigns.com/wp-content/uploads/sites/11/2025/02/hero.jpg",
         title: "Sunset Over Mountains",
         description: "A breathtaking view of the sun setting behind a mountain range."
     },
