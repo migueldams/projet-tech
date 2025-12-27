@@ -11,9 +11,9 @@ function About() {
 
     return (
         <ScrollAnimation>
-            <div id="about" className='flex flex-col justify-center items-center gap-15 my-20 w-full'>
+            <div id="about" className='flex flex-col justify-center items-center gap-15 my-10 w-full'>
                 <Title h1="About Us" h2="We are a team of passionate designers and developers dedicated to creating beautiful and functional websites." />
-                <div className='grid grid-cols-2 gap-15 w-4/5'>
+                <div className='grid grid-cols-1 md:grid-cols-2 gap-15 w-4/5'>
                     <div>
                         {about.map((item) => (
                             <div key={item.id} className='flex flex-col gap-4 mb-6 border-b-2 pb-4 border-gray-300 transition-all duration-100'>

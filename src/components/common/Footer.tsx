@@ -3,6 +3,41 @@ import { NavLink } from '@/constant';
 
 function Footer() {
 
+    const handleScroll = (id: number) => {
+        switch (id) {
+            case 1:
+                document.getElementById("home")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+                break;
+
+            case 2:
+                document.getElementById("service")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+                break;
+
+            case 3:
+                document.getElementById("about")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+                break;
+
+            case 4:
+                document.getElementById("contact")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+                break;
+
+            default:
+                break;
+        }
+    };
+
     return (
         <div className='w-screen lg:h-120 bg-black flex flex-col  items-center'>
             <div className='w-full lg:h-100 px-20 py-20 flex flex-col lg:flex-row justify-between'>
@@ -14,10 +49,14 @@ function Footer() {
                     <div className='w-1/3 flex flex-col gap-5  py-10 lg:py-0 border-b-2 lg:border-b-0 border-gray-400'>
                         <h3 className='text-white font-bold mb-4'>Quick Links</h3>
                         <ul className='text-gray-300'>
-                            {NavLink.map((link) => (
-                                <li key={link.name} className='mb-2'>
-                                    <a href={link.href} className='hover:text-white'>{link.name}</a>
-                                </li>
+                            {NavLink.map((link, i) => (
+                                <button
+                                    key={link.name}
+                                    onClick={() => handleScroll(i + 1)}
+                                    className=" hover:text-gray-500  "
+                                >
+                                    {link.name}
+                                </button>
                             ))}
                         </ul>
                     </div>
@@ -37,6 +76,7 @@ function Footer() {
                             <a href="#" className='hover:text-white'>Instagram</a>
                             <a href="#" className='hover:text-white'>LinkedIn</a>
                         </div>
+
                     </div>
                 </div>
 

@@ -72,7 +72,7 @@ export default function FormContact() {
     }
 
     return (
-        <Card className="w-1/2 text-2xl">
+        <Card className="w-full md:w-1/2 text-2xl">
             <CardHeader>
                 <CardTitle>Contact Us</CardTitle>
                 <CardDescription>
