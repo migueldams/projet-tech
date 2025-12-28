@@ -41,7 +41,7 @@ function Services() {
             <div id='service' className='w-full flex flex-col justify-center items-center'>
                 <div className='flex flex-col justify-center items-center my-20 gap-10'>
                     <Title h1="We build beautiful websites that showcase your creativity, attract clients, and drive sales." h2="From custom design and e-commerce integration to Google Ads management and ongoing maintenance, we provide everything you need to grow your business." />
-                    <div className='flex flex-col md:flex-row px-10 xl:px-0 w-full xl:w-4/5 2xl:w-3/5 gap-5 justify-between md:items-center'>
+                    <div className='flex flex-col md:flex-row  px-10 xl:px-0 w-full xl:w-4/5 2xl:w-3/5 gap-5 justify-between md:items-center'>
                         <div>
                             <Counter target={15} text={"+Years"} />
                             <p className='text-sm sm:text-md lg:text-xl'>Experience in Website Development</p>
@@ -56,7 +56,7 @@ function Services() {
                         </div>
                     </div>
                 </div>
-                <div className='w-full px-10 md:w-4/5 lg:w-2/3  flex flex-col  gap-20'>
+                <div className='w-full px-5 sm:px-10 md:w-4/5 lg:w-2/3  flex flex-col  gap-20'>
                     {service.map((item, i) => (
                         <div key={item.id} ref={(el) => { cardsRef.current[i] = el; }} className='w-full h-120 flex flex-col md:flex-row bg-white justify-center items-center gap-10 shadow-2xl shadow-gray-300 p-5 rounded-md ' style={{ zIndex: service.length + item.id }}>
                             <img className='w-full md:w-1/2 h-1/2 md:h-full object-cover rounded-md' src={item.imageUrl} alt="" />
@@ -105,7 +105,7 @@ function Services() {
                             <Stick icon={<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="#202020"><path d="M9 17a8.2 8.2 0 0 1-3.298-.67 8.6 8.6 0 0 1-2.706-1.826 8.6 8.6 0 0 1-1.827-2.706A8.2 8.2 0 0 1 .5 8.5q0-1.825.688-3.395a8.3 8.3 0 0 1 1.896-2.717.87.87 0 0 1 .642-.25q.375.009.63.264L9.68 7.727q.208.208.212.522a.7.7 0 0 1-.212.532.72.72 0 0 1-.527.217.72.72 0 0 1-.527-.217L3.754 3.908a7.8 7.8 0 0 0-1.262 2.031Q2 7.082 2 8.5q0 2.9 2.05 4.95T9 15.5t4.95-2.05T16 8.5q0-2.646-1.736-4.632-1.737-1.985-4.514-2.306V2.75q0 .318-.216.535A.73.73 0 0 1 9 3.5a.73.73 0 0 1-.534-.216.73.73 0 0 1-.216-.534v-2q0-.319.216-.534A.73.73 0 0 1 9 0q1.749 0 3.298.67a8.6 8.6 0 0 1 2.706 1.826 8.6 8.6 0 0 1 1.827 2.706A8.2 8.2 0 0 1 17.5 8.5a8.2 8.2 0 0 1-.67 3.298 8.6 8.6 0 0 1-1.826 2.706 8.6 8.6 0 0 1-2.706 1.827A8.2 8.2 0 0 1 9 17M4 9.384a.85.85 0 0 1-.63-.254.86.86 0 0 1-.255-.63q0-.378.255-.63.255-.255.63-.255.378 0 .63.255.255.255.255.63 0 .378-.255.63a.86.86 0 0 1-.63.254m5 5a.85.85 0 0 1-.63-.254.86.86 0 0 1-.254-.63q0-.378.254-.63.255-.255.63-.254.378 0 .63.254.255.255.254.63 0 .378-.254.63a.86.86 0 0 1-.63.254m5-5a.85.85 0 0 1-.63-.254.86.86 0 0 1-.254-.63q0-.378.254-.63.255-.255.63-.255.378 0 .63.255.255.255.254.63 0 .378-.254.63a.86.86 0 0 1-.63.254"></path></svg>} content="We Create For The Pros" />
                             <Stick icon={<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" fill="#202020"><path d="M9.342 6.616h8.116a7.9 7.9 0 0 0-2.077-3.04A7.6 7.6 0 0 0 12.15 1.8zm-2.184 2L11.235 1.6a6 6 0 0 0-.618-.075A9 9 0 0 0 10 1.5a7.6 7.6 0 0 0-3.075.625A8.7 8.7 0 0 0 4.4 3.8zM2.25 11.5h5.566L3.777 4.504a8.4 8.4 0 0 0-1.308 2.31A7.6 7.6 0 0 0 2 9.5a8 8 0 0 0 .25 2m5.62 5.7 2.776-4.815H2.542a7.86 7.86 0 0 0 2.087 3.039 7.65 7.65 0 0 0 3.24 1.776m2.13.3a7.6 7.6 0 0 0 3.075-.625A8.7 8.7 0 0 0 15.6 15.2l-2.758-4.815-4.058 6.996q.275.06.596.09t.62.029m6.223-3.004a8.8 8.8 0 0 0 1.289-2.31A7.5 7.5 0 0 0 18 9.5a8 8 0 0 0-.25-2h-5.565zM10 19a9.2 9.2 0 0 1-3.687-.749 9.6 9.6 0 0 1-3.024-2.04 9.6 9.6 0 0 1-2.04-3.023A9.2 9.2 0 0 1 .5 9.5q0-1.97.749-3.695a9.7 9.7 0 0 1 2.04-3.016A9.6 9.6 0 0 1 6.313.749 9.2 9.2 0 0 1 10 0q1.97 0 3.695.749 1.725.75 3.017 2.04 1.29 1.29 2.039 3.016T19.5 9.5q0 1.954-.749 3.688a9.6 9.6 0 0 1-2.04 3.024 9.7 9.7 0 0 1-3.016 2.039Q11.97 19.001 10 19"></path></svg>} content="We Create For The Pros" />
                         </div>
-                        <div className='grid grid-cols-1 md:grid-cols-2  gap-10 w-full px-10 md:px-20'>
+                        <div className='grid grid-cols-1 md:grid-cols-2  gap-10 w-full px-5 md:px-10 xl:px-20'>
                             {galleries.map((item) => (
                                 <div key={item.id} className='flex flex-col w-full justify-center  gap-5'>
                                     <div className='w-full h-100 flex justify-center object-cover bg-gray-100 relative z-10 rounded-md overflow-hidden'><img className='w-3/4 h-full object-cover top-10 relative rounded-2xl hover:translate-y-[-20px] duration-100 transition-all' src={item.imageUrl} alt="" /></div>

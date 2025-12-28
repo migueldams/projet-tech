@@ -6,7 +6,7 @@ function Contact() {
     return (
         <ScrollAnimation>
             <div id='contact' className='flex w-full md:h-screen justify-center py-20  bg-gray-100  '>
-                <div className='w-full lg:w-4/5 h-full flex flex-col md:flex-row justify-center gap-10 px-10 md:px-0'>
+                <div className='w-full lg:w-4/5 h-full flex flex-col md:flex-row justify-center gap-10 px-5 md:px-0'>
                     <div className=' w-full md:w-1/2 flex flex-col items-center gap-20'>
                         <div className='flex  w-full flex-col items-center gap-5'>
                             <p className='text-3xl font-bold text-center '>We will be there for you from start to finish.</p>

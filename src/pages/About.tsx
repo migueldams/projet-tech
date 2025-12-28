@@ -17,13 +17,13 @@ function About() {
                     <div>
                         {about.map((item) => (
                             <div key={item.id} className='flex flex-col gap-4 mb-6 border-b-2 pb-4 border-gray-300 transition-all duration-100'>
-                                <div className='flex justify-between'><p className='text-2xl font-semibold'>{item.id}.{item.title}</p> <button className='font-bold text-4xl transition-all duration-100' onClick={() => setIsActive(isActive === item.id ? null : item.id)}>{isActive === item.id ? '-' : '+'}</button></div>
+                                <div className='flex justify-between'><p className='text-md sm:text-xl xl:text-2xl font-semibold'>{item.id}.{item.title}</p> <button className='font-bold text-2xl md:text-4xl transition-all duration-100' onClick={() => setIsActive(isActive === item.id ? null : item.id)}>{isActive === item.id ? '-' : '+'}</button></div>
                                 <p className={`text-gray-500 transition-all duration-200 ${isActive === item.id ? 'block' : 'hidden'}`}>{item.description}</p>
                             </div>
                         ))}
 
                     </div>
-                    <div className='flex justify-center items-center w-full h-150 '>
+                    <div className='flex justify-center items-center w-full h-100 sm:h-150 '>
                         <img className='w-full h-full rounded-2xl' src="https://photowebdesigns.com/wp-content/uploads/2025/06/process2.jpg" alt="" />
                     </div>
                 </div>
