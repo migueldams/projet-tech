@@ -9,8 +9,8 @@ function Contact() {
                 <div className='w-full lg:w-4/5 h-full flex flex-col md:flex-row justify-center gap-10 px-5 md:px-0'>
                     <div className=' w-full md:w-1/2 flex flex-col items-center gap-20'>
                         <div className='flex  w-full flex-col items-center gap-5'>
-                            <p className='text-3xl font-bold text-center '>We will be there for you from start to finish.</p>
-                            <p className='text-gray-500 text-center '>Have a question or ready to get started? We're here to help bring your vision to life with a website that is as unique and stunning as your work</p>
+                            <p className='text-3xl font-bold text-center '>Demande d’information ou devis</p>
+                            <p className='text-gray-500 text-center '>Vous souhaitez en savoir plus sur nos services informatiques et solutions technologiques ? Notre équipe vous accompagne et répond à toutes vos demandes.</p>
                         </div>
                         <div className='w-full flex justify-between rounded-xl bg-white p-5'>
                             <div className='flex flex-col justify-center'>

@@ -76,7 +76,7 @@ export default function FormContact() {
             <CardHeader>
                 <CardTitle>Contact Us</CardTitle>
                 <CardDescription>
-                    Help us improve by reporting bugs you encounter.
+                    N'hésitez pas à nous contacter pour toute demande
                 </CardDescription>
             </CardHeader>
             <CardContent>
@@ -88,7 +88,7 @@ export default function FormContact() {
                             render={({ field, fieldState }) => (
                                 <Field data-invalid={fieldState.invalid}>
                                     <FieldLabel htmlFor="form-rhf-demo-title">
-                                        Your Email
+                                        votre Email
                                     </FieldLabel>
                                     <Input
                                         {...field}
@@ -109,13 +109,13 @@ export default function FormContact() {
                             render={({ field, fieldState }) => (
                                 <Field data-invalid={fieldState.invalid}>
                                     <FieldLabel htmlFor="form-rhf-demo-title">
-                                        The object
+                                        Object
                                     </FieldLabel>
                                     <Input
                                         {...field}
                                         id="form-rhf-demo-title"
                                         aria-invalid={fieldState.invalid}
-                                        placeholder="Login button not working on mobile"
+                                        placeholder="entrez l'object de votre message"
                                         autoComplete="off"
                                     />
                                     {fieldState.invalid && (
@@ -136,20 +136,18 @@ export default function FormContact() {
                                         <InputGroupTextarea
                                             {...field}
                                             id="form-rhf-demo-description"
-                                            placeholder="I'm having an issue with the login button on mobile."
+                                            placeholder="entrez votre requete nous vous écoutons"
                                             rows={6}
                                             className="min-h-24 resize-none"
                                             aria-invalid={fieldState.invalid}
                                         />
                                         <InputGroupAddon align="block-end">
                                             <InputGroupText className="tabular-nums">
-                                                {field.value.length}/100 characters
+                                                {field.value.length}/100 caracteres
                                             </InputGroupText>
                                         </InputGroupAddon>
                                     </InputGroup>
                                     <FieldDescription>
-                                        Include steps to reproduce, expected behavior, and what
-                                        actually happened.
                                     </FieldDescription>
                                     {fieldState.invalid && (
                                         <FieldError errors={[fieldState.error]} />
@@ -163,10 +161,10 @@ export default function FormContact() {
             <CardFooter>
                 <Field orientation="horizontal">
                     <Button type="button" variant="outline" onClick={() => form.reset()}>
-                        Reset
+                        effacer
                     </Button>
                     <Button type="submit" form="form-rhf-demo">
-                        Send Message
+                        Parler avec un conseiller
                     </Button>
                 </Field>
             </CardFooter>

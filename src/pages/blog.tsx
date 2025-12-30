@@ -8,7 +8,7 @@ function Blog() {
     return (
         <ScrollAnimation>
             <div id='blog' className='flex flex-col justify-center items-center gap-15 mt-20 w-full'>
-                <Title h1="Frequently Asked Questions." h2="We are a team of passionate designers and developers dedicated to creating beautiful and functional websites." />
+                <Title h1="Question fréquente" h2="nous somme l'entreprise faite pour vous et par vous ." />
                 <div className='flex justify-center gap-15 w-4/5'>
                     <div className='flex flex-col items-center w-full'>
                         {ask.map((item) => (

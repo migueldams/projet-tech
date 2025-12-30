@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from '@/constant';
 import { Menu, X } from 'lucide-react'
+import logo from '@/assets/logotech.png'
 
 function Headers() {
 
@@ -46,7 +47,7 @@ function Headers() {
             <div className={`${IsActive && 'h-40 rounded-xl top-5'} h-15 md:h-20 w-4/5 xl:w-3/5  backdrop-blur-3xl border-2 border-gray-300 rounded-full bg-[rgba(255,255,255,0.6)] flex flex-col items-center justify-center px-4 md:px-0 pb-2 fixed z-80 transition-all duration-200 `}>
                 <div className='flex justify-between items-center w-full'>
                     <div className='flex w-1/4 justify-center items-center'>
-                        <img src="https://photowebdesigns.com/wp-content/uploads/2025/03/logo.svg" alt="" />
+                        <img className='w-30' src={logo} alt="" />
                     </div>
                     <div className='w-1/2 hidden md:flex justify-center gap-4 font-semibold items-center'>
                         {NavLink.map((link, i) => (
@@ -68,7 +69,7 @@ function Headers() {
                                 <img className='w-10 h-10 rounded-full ' src="https://photowebdesigns.com/wp-content/uploads/2025/02/get-in-touch.png" alt="" />
                                 <div className='bg-green-500 h-3 w-3 absolute rounded-full z-index-10 top-0 right-0'></div>
                             </div>
-                            <p className='font-semibold hidden lg:flex'>Get In Touch</p>
+                            <p className='font-semibold hidden lg:flex'>Entrer en contact</p>
                         </button>
                     </div>
 
