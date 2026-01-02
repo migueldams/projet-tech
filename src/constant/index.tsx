@@ -1,11 +1,16 @@
 import type { aboutType, askType, blogType, galleryType, parteernType, serviceType } from "../types";
 import { Hand, Laptop, SearchCheck, Star, Trophy } from 'lucide-react'
+import clavier from '@/assets/clavier.jpg'
+import clavier1 from '@/assets/clavier1.jpeg'
+import Gens from '@/assets/Gens.jpeg'
+import security from '@/assets/security.jpeg'
+import women from '@/assets/Women.jpeg'
 
 const service: serviceType[] = [
     {
         id: 1,
         imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/service1.jpg",
-        title: "Personalised Website development",
+        title: "Conception de logiciels de gestion",
         description: "We build personalized websites for photographers using beautiful and professional templates",
         content: [
             "Super-fast delivery",
@@ -15,7 +20,7 @@ const service: serviceType[] = [
     {
         id: 2,
         imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/service-2.jpg",
-        title: "E-commerce Solutions",
+        title: "Cyber sécurité",
         description: "We create stunning online stores that showcase your photography and make it easy for customers to purchase prints and digital downloads.",
         content: [
             "Secure payment gateways",
@@ -25,7 +30,7 @@ const service: serviceType[] = [
     {
         id: 3,
         imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/service-3.jpg",
-        title: "SEO and Marketing Services",
+        title: "Réseau et sécurité informatique",
         description: "We help photographers increase visibility and attract more clients through strategic SEO and marketing campaigns.",
         content: [
             "Search engine optimization (SEO)",
@@ -35,7 +40,7 @@ const service: serviceType[] = [
     {
         id: 4,
         imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/service-4.jpg",
-        title: "Website Maintenance and Support",
+        title: "Développement informatique",
         description: "We provide ongoing maintenance and support to keep your website running smoothly and securely.",
         content: [
             "Regular updates and security patches",
@@ -45,7 +50,7 @@ const service: serviceType[] = [
     {
         id: 5,
         imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/service-5.jpg",
-        title: "Custom Features and Integrations",
+        title: "Maintenance informatique",
         description: "We offer custom features and integrations to enhance the functionality of your photography website.",
         content: [
             "Client proofing galleries",
@@ -78,38 +83,38 @@ const partern: parteernType[] = [
 const galleries: galleryType[] = [
     {
         id: 1,
-        imageUrl: "https://freelancer.photowebdesigns.com/wp-content/uploads/sites/11/2025/02/hero.jpg",
-        title: "Sunset Over Mountains",
+        imageUrl: clavier,
+        title: "Solutions Digitales & Développement",
         description: "A breathtaking view of the sun setting behind a mountain range."
     },
     {
         id: 2,
-        imageUrl: "https://agency.photowebdesigns.com/wp-content/uploads/sites/12/2025/02/service-1.jpg",
-        title: "City Skyline",
+    imageUrl: clavier1,
+        title: "Infrastructure & Systèmes Informatiques",
         description: "A stunning capture of a city's skyline during twilight."
     },
     {
         id: 3,
-        imageUrl: "https://agency.photowebdesigns.com/wp-content/uploads/sites/12/2025/02/service-2.jpg",
-        title: "Forest Pathway",
+        imageUrl: security,
+        title: "Cybersécurité & Protection des Données",
         description: "A serene pathway through a dense forest."
     },
     {
         id: 4,
-        imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/gallery4.jpg",
-        title: "Ocean Waves",
+        imageUrl: women,
+        title: "Cloud Computing & Hébergement",
         description: "Powerful waves crashing onto the shore at sunset."
     },
     {
         id: 5,
-        imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/gallery5.jpg",
-        title: "Desert Dunes",
+        imageUrl: Gens,
+        title: "Transformation Digitale & Conseil IT",
         description: "Rolling sand dunes under a clear blue sky."
     },
     {
         id: 6,
         imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/gallery6.jpg",
-        title: "Snowy Mountains",
+        title: "Solutions Spécialisées",
         description: "Majestic mountains covered in snow during winter."
     }
 ]

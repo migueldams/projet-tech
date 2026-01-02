@@ -94,9 +94,9 @@ body {
 
     --radius: 0.625rem;
 
-    --background: oklch(1 0 0);
+    --background: #14181b;
 
-    --foreground: oklch(0.145 0 0);
+    --foreground: #48abdb;
 
     --card: oklch(1 0 0);
 
@@ -159,7 +159,7 @@ body {
 
 .dark {
 
-    --background: oklch(0.145 0 0);
+    --background: #14181b;
 
     --foreground: oklch(0.985 0 0);
 

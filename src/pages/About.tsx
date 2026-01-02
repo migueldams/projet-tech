@@ -2,6 +2,8 @@ import ScrollAnimation from '@/components/common/ScrollAnimation';
 import Title from '@/components/ui/Title'
 import { about } from '@/constant'
 import { useState } from 'react'
+import clavier1 from '@/assets/clavier1.jpeg'
+import servi from '@/assets/servi.jpeg'
 
 function About() {
 
@@ -23,8 +25,8 @@ function About() {
                         ))}
 
                     </div>
-                    <div className='flex justify-center items-center w-full h-100 sm:h-150 '>
-                        <img className='w-full h-full rounded-2xl' src="https://photowebdesigns.com/wp-content/uploads/2025/06/process2.jpg" alt="" />
+                    <div className='flex justify-center items-center w-full h-120 sm:h-150  '>
+                        <img className='w-full h-full  rounded-2xl' src={servi} alt="" />
                     </div>
                 </div>
             </div>

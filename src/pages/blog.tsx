@@ -2,6 +2,7 @@ import ScrollAnimation from '@/components/common/ScrollAnimation';
 import Title from '@/components/ui/Title'
 import { ask } from '@/constant'
 import React from 'react'
+import men from '@/assets/men.png'
 
 function Blog() {
     const [isActive, setIsActive] = React.useState<number | null>(null);
@@ -19,9 +20,9 @@ function Blog() {
                         ))}
                     </div>
                 </div>
-                <div className='w-full h-100 md:h-200 bg-gradient-to-r from-orange-500 to-gray-100 flex justify-end items-end'>
-                    <img src="https://photowebdesigns.com/wp-content/uploads/2025/03/banner4.png" alt="" />
-                </div>
+                {/* <div className='w-full h-100 relative bg-gradient-to-r from-background to-gray-100 flex justify-end items-end'>
+                    <img className='absolute h-120' src={men} alt="" />
+                </div> */}
             </div>
         </ScrollAnimation>
 

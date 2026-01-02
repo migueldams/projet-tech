@@ -2,6 +2,7 @@
 import { listhozontale } from '@/constant';
 import Stick from '@/components/ui/stick';
 import ScrollAnimation from '@/components/common/ScrollAnimation';
+import bannier from '@/assets/bannier.jpg';
 
 function Home() {
 
@@ -15,10 +16,14 @@ function Home() {
           <p className='lg:text-xl text-gray-500'>entreprise spécialisée dans les solutions informatiques, <b>le développement digital, les services IT,</b>la <b>transformation</b> numérique et la cybersécurité.</p>
           <div className='flex flex-col sm:flex-row gap-5 '>
             <button className='bg-black rounded-full font-semibold text-white px-8 py-4 cursor-pointer '>Commencer</button>
-            <button className='bg-gray-200 rounded-full font-semibold px-8  py-4 bg-gradient-to-r from-blue-800 to-yellow-300 cursor-pointer'>grande offre de reduction</button>
+            <button className='bg-gray-200 rounded-full font-semibold px-8  py-4 bg-gradient-to-r from-blue-800 to-foreground cursor-pointer shadow-2xl shadow-blue-400 transition-colors duration-100'>Grande offre de reduction</button>
           </div>
         </div>
-        <img className='w-full h-150 object-cover' src="https://photowebdesigns.com/wp-content/uploads/2025/06/service-3b.jpg" alt="" />
+        <div className='w-full h-150 bg-background relative'>
+          <img className='w-3/4 h-150 object-cover' src={bannier} alt="" />
+          <div className='text-center text-5xl z-50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold'>votre solution technologique <br /><b className='underline'>TECH SOLUTION S.A</b></div>
+          <div className='w-1/4 z-30 h-150 absolute bg-gradient-to-r from-transparent to-background top-0 left-2/4'></div>
+        </div>
         <div className='py-10 overflow-hidden w-full'>
           <div className='justify-center w-max  gap-10 shadow-inner py-5 shadow-white Carousel-container hidden sm:flex'>
             {[...listhozontale, ...listhozontale].map((item, i) => (
