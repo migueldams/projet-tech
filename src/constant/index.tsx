@@ -1,24 +1,22 @@
+import All from '@/assets/All.jpeg';
+import Are from '@/assets/Are.jpeg';
+import clavier from '@/assets/clavier.jpg';
+import clavier1 from '@/assets/clavier1.jpeg';
+import Data from '@/assets/Data.jpeg';
+import Gens from '@/assets/Gens.jpeg';
+import If from '@/assets/If.jpeg';
+import Design from '@/assets/image.jpg';
+import Keep from '@/assets/Keep.jpeg';
+import security from '@/assets/security.jpeg';
+import women from '@/assets/Women.jpeg';
+import { Hand, Laptop, SearchCheck, Star, Trophy } from 'lucide-react';
 import type { aboutType, askType, blogType, galleryType, parteernType, serviceType } from "../types";
-import { Hand, Laptop, SearchCheck, Star, Trophy } from 'lucide-react'
-import clavier from '@/assets/clavier.jpg'
-import clavier1 from '@/assets/clavier1.jpeg'
-import Gens from '@/assets/Gens.jpeg'
-import security from '@/assets/security.jpeg'
-import women from '@/assets/Women.jpeg'
-import All from '@/assets/All.jpeg'
-import Are from '@/assets/Are.jpeg'
-import Design from '@/assets/Design.jpeg'
-import Elevate from '@/assets/Elevate.jpeg'
-import Keep from '@/assets/Keep.jpeg'
-import Data from '@/assets/Data.jpeg'
-import Dev from '@/assets/Dev.jpeg'
-import If from '@/assets/If.jpeg'
 
 
 const service: serviceType[] = [
     {
         id: 1,
-        imageUrl: Design,
+        imageUrl: If,
         title: "Conception de logiciels de gestion",
         description: "We build personalized websites for photographers using beautiful and professional templates",
         content: [
@@ -38,7 +36,7 @@ const service: serviceType[] = [
     },
     {
         id: 3,
-        imageUrl: If,
+        imageUrl: Design,
         title: "Réseau et sécurité informatique",
         description: "We help photographers increase visibility and attract more clients through strategic SEO and marketing campaigns.",
         content: [
@@ -254,4 +252,4 @@ const listhozontale = [
     }
 ]
 
-export { service, partern, galleries, about, blog, ask, NavLink, listhozontale };
+export { about, ask, blog, galleries, listhozontale, NavLink, partern, service };
