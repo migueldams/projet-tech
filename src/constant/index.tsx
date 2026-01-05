@@ -5,11 +5,20 @@ import clavier1 from '@/assets/clavier1.jpeg'
 import Gens from '@/assets/Gens.jpeg'
 import security from '@/assets/security.jpeg'
 import women from '@/assets/Women.jpeg'
+import All from '@/assets/All.jpeg'
+import Are from '@/assets/Are.jpeg'
+import Design from '@/assets/Design.jpeg'
+import Elevate from '@/assets/Elevate.jpeg'
+import Keep from '@/assets/Keep.jpeg'
+import Data from '@/assets/Data.jpeg'
+import Dev from '@/assets/Dev.jpeg'
+import If from '@/assets/If.jpeg'
+
 
 const service: serviceType[] = [
     {
         id: 1,
-        imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/service1.jpg",
+        imageUrl: Design,
         title: "Conception de logiciels de gestion",
         description: "We build personalized websites for photographers using beautiful and professional templates",
         content: [
@@ -19,7 +28,7 @@ const service: serviceType[] = [
     },
     {
         id: 2,
-        imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/service-2.jpg",
+        imageUrl: Data,
         title: "Cyber sécurité",
         description: "We create stunning online stores that showcase your photography and make it easy for customers to purchase prints and digital downloads.",
         content: [
@@ -29,7 +38,7 @@ const service: serviceType[] = [
     },
     {
         id: 3,
-        imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/service-3.jpg",
+        imageUrl: If,
         title: "Réseau et sécurité informatique",
         description: "We help photographers increase visibility and attract more clients through strategic SEO and marketing campaigns.",
         content: [
@@ -39,7 +48,7 @@ const service: serviceType[] = [
     },
     {
         id: 4,
-        imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/service-4.jpg",
+        imageUrl: Keep,
         title: "Développement informatique",
         description: "We provide ongoing maintenance and support to keep your website running smoothly and securely.",
         content: [
@@ -49,7 +58,7 @@ const service: serviceType[] = [
     },
     {
         id: 5,
-        imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/service-5.jpg",
+        imageUrl: Are,
         title: "Maintenance informatique",
         description: "We offer custom features and integrations to enhance the functionality of your photography website.",
         content: [
@@ -113,7 +122,7 @@ const galleries: galleryType[] = [
     },
     {
         id: 6,
-        imageUrl: "https://photowebdesigns.com/wp-content/uploads/2025/03/gallery6.jpg",
+        imageUrl: All,
         title: "Solutions Spécialisées",
         description: "Majestic mountains covered in snow during winter."
     }

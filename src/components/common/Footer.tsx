@@ -48,12 +48,12 @@ function Footer() {
                 <div className='w-full lg:w-2/3 flex flex-col lg:flex-row '>
                     <div className='w-1/3 flex flex-col gap-5  py-10 lg:py-0 border-b-2 lg:border-b-0 border-gray-400'>
                         <h3 className='text-white font-bold mb-4'>Quick Links</h3>
-                        <ul className='text-gray-300'>
+                        <ul className='text-gray-300 flex flex-col gap-2'>
                             {NavLink.map((link, i) => (
                                 <button
                                     key={link.name}
                                     onClick={() => handleScroll(i + 1)}
-                                    className=" hover:text-gray-500  "
+                                    className=" hover:text-gray-500 w-12 "
                                 >
                                     {link.name}
                                 </button>

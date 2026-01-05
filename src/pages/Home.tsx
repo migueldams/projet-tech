@@ -3,8 +3,10 @@ import { listhozontale } from '@/constant';
 import Stick from '@/components/ui/stick';
 import ScrollAnimation from '@/components/common/ScrollAnimation';
 import bannier from '@/assets/bannier.jpg';
+import { useLocation } from 'react-router-dom';
 
 function Home() {
+  const location = useLocation();
 
 
   return (
@@ -19,11 +21,13 @@ function Home() {
             <button className='bg-gray-200 rounded-full font-semibold px-8  py-4 bg-gradient-to-r from-blue-800 to-foreground cursor-pointer shadow-2xl shadow-blue-400 transition-colors duration-100'>Grande offre de reduction</button>
           </div>
         </div>
-        <div className='w-full h-150 bg-background relative'>
-          <img className='w-3/4 h-150 object-cover' src={bannier} alt="" />
-          <div className='text-center text-5xl z-50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold'>votre solution technologique <br /><b className='underline'>TECH SOLUTION S.A</b></div>
-          <div className='w-1/4 z-30 h-150 absolute bg-gradient-to-r from-transparent to-background top-0 left-2/4'></div>
-        </div>
+        {location.pathname === '/' && (
+          <div className='w-full h-150 bg-background relative'>
+            <img className='w-3/4 h-150 object-cover' src={bannier} alt="" />
+            <div className='text-center text-5xl z-50 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold'>votre solution technologique <br /><b className='underline'>TECH SOLUTION S.A</b></div>
+            <div className='w-1/4 z-30 h-150 absolute bg-gradient-to-r from-transparent to-background top-0 left-2/4'></div>
+          </div>
+        )}
         <div className='py-10 overflow-hidden w-full'>
           <div className='justify-center w-max  gap-10 shadow-inner py-5 shadow-white Carousel-container hidden sm:flex'>
             {[...listhozontale, ...listhozontale].map((item, i) => (

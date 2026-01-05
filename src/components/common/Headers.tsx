@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import { NavLink } from '@/constant';
 import { Menu, X } from 'lucide-react'
 import logo from '@/assets/logotech.png'
+import { useLocation } from 'react-router-dom';
 
 function Headers() {
 
     const [IsActive, setIsActive] = useState(false)
+    const location = useLocation();
     const handleScroll = (id: number) => {
         switch (id) {
             case 1:
@@ -77,6 +79,7 @@ function Headers() {
                 {IsActive &&
                     <div className={`w-full flex flex-col justify-center gap-1 font-semibold text-sm items-center  `}>
                         {NavLink.map((link, i) => (
+
                             <button
                                 key={link.name}
                                 onClick={() => handleScroll(i + 1)}

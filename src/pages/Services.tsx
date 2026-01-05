@@ -5,6 +5,7 @@ import { ArrowRight, Check } from 'lucide-react'
 import Title from '@/components/ui/Title';
 import Stick from '@/components/ui/stick';
 import ScrollAnimation from '@/components/common/ScrollAnimation';
+import { Link } from 'react-router-dom';
 
 
 function Services() {
@@ -111,7 +112,7 @@ function Services() {
                                     <div className='w-full h-100 flex justify-center object-cover bg-gray-100 relative z-10 rounded-md overflow-hidden'><img className='w-3/4 h-full object-cover top-10 relative rounded-2xl hover:translate-y-[-20px] duration-100 transition-all' src={item.imageUrl} alt="" /></div>
                                     <p className='font-semibold text-xl'>{item.title}</p>
                                     <p className='text-gray-500 '>{item.description}</p>
-                                    <div className='flex w-full gap-8'><button className='text-center rounded-full bg-black w-50 text-white  gap-2 px-4 py-4 flex justify-center items-center shadow-xl shadow-black'>Commencer</button>
+                                    <div className='flex w-full gap-8'><Link to="/getStarted" className='text-center rounded-full bg-black w-50 text-white  gap-2 px-4 py-4 flex justify-center items-center shadow-xl shadow-black'>Commencer</Link>
                                     </div>
                                 </div>
                             ))}
