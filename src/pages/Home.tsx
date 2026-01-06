@@ -63,7 +63,7 @@ function Home() {
               Nos Service
             </button>
             <button
-              className="bg-gray-200 rounded-full font-semibold px-8  py-4 bg-gradient-to-r from-blue-800 to-foreground cursor-pointer shadow-2xl shadow-blue-400 transition-colors duration-100"
+              className="bg-gray-200 rounded-full font-semibold px-8  py-4 bg-linear-to-r from-blue-800 to-foreground cursor-pointer shadow-2xl shadow-blue-400 transition-colors duration-100"
               onClick={() => {
                 handleScroll(3);
               }}
@@ -79,7 +79,7 @@ function Home() {
               votre solution technologique <br />
               <b className="underline">TECH SOLUTION S.A</b>
             </div>
-            <div className="w-1/4 z-30 h-150 absolute bg-gradient-to-r from-transparent to-background top-0 left-2/4"></div>
+            <div className="w-1/4 z-30 h-150 absolute bg-linear-to-r from-transparent to-background top-0 left-2/4"></div>
           </div>
         )}
         <div className="py-10 overflow-hidden w-full">

@@ -15,7 +15,7 @@ function Services() {
     const handleScroll = () => {
       if (!cardsRef.current) return;
 
-      cardsRef.current.forEach((card, i) => {
+      cardsRef.current.forEach((card) => {
         if (!card) return; // TS safety
 
         const rect = card.getBoundingClientRect();
@@ -80,14 +80,14 @@ function Services() {
                 <p className="font-semibold text-md md:text-xl xl:text-2xl 2xl:text-4xl">
                   {item.title}
                 </p>
-                <p className="text-gray-500 text-sm lg:text-md xl:text-xl">
+                <p className="text-gray-500 text-sm xl:text-[18px]">
                   {item.description}
                 </p>
                 <ul>
                   {item.content.map((content: string, index: number) => (
                     <p
                       key={index}
-                      className="text-gray-800 font-semibold text-sm lg:text-md xl:text-xl list-disc list-inside"
+                      className="text-gray-800 font-semibold text-sm xl:text-[17px] list-disc list-inside"
                     >
                       <Check className="w-4 h-4 mr-2 inline text-green-600" />
                       {content}
@@ -203,7 +203,7 @@ function Services() {
                 >
                   <div className="w-full h-100 flex justify-center object-cover bg-gray-100 relative z-10 rounded-md overflow-hidden">
                     <img
-                      className="w-3/4 h-full object-cover top-10 relative rounded-2xl hover:translate-y-[-20px] duration-100 transition-all"
+                      className="w-3/4 h-full object-cover top-10 relative rounded-2xl hover:-translate-y-5 duration-100 transition-all"
                       src={item.imageUrl}
                       alt=""
                     />
